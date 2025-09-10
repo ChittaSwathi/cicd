@@ -1,0 +1,57 @@
+Started by GitHub push by ChittaSwathi
+Obtained Jenkinsfile from git https://github.com/ChittaSwathi/swathi-jenkins-demo
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /Users/swathi/.jenkins/workspace/swathi-jenkins-demo
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /Users/swathi/.jenkins/workspace/swathi-jenkins-demo/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ChittaSwathi/swathi-jenkins-demo # timeout=10
+Fetching upstream changes from https://github.com/ChittaSwathi/swathi-jenkins-demo
+ > git --version # timeout=10
+ > git --version # 'git version 2.46.0'
+ > git fetch --tags --force --progress -- https://github.com/ChittaSwathi/swathi-jenkins-demo +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision c09d96d077864f7e0ac7cb81af3e606366aeefc2 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c09d96d077864f7e0ac7cb81af3e606366aeefc2 # timeout=10
+Commit message: "comment added to JenkinsFile"
+ > git rev-list --no-walk 332a7e5d82548b117f24845c57f7dfa5d90f0207 # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Prepare)
+[Pipeline] sh
++ chmod +x hello_world.sh
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build)
+[Pipeline] sh
++ ./hello_world.sh
+Hello from Jenkins Pipeline!
+ new comment added
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Deploy)
+[Pipeline] echo
+Deploying application (mock step)...
+[Pipeline] echo
+successfull
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
