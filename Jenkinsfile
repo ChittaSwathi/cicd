@@ -20,6 +20,7 @@ pipeline {
             steps {
                 // Mock deployment step
                 echo 'Deploying application (mock step)...'
+		echo 'successfull'
             }
         }
     }
