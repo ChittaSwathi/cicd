@@ -2,7 +2,7 @@ Linked that i followed to do the setup:
 https://www.capitalone.com/tech/software-engineering/demystifying-devops-getting-started-with-automated-delivery-pipelines/
 
 
-# CI/CD with GitHub → Jenkins (via ngrok)
+# CI/CD with GitHub → Jenkins (local tunneling via ngrok)
 
 This repo demonstrates a simple CI/CD pipeline where a **GitHub repo** triggers a **local Jenkins build** exposed through **ngrok**.
 
