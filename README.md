@@ -1,6 +1,7 @@
-Linked that i followed to do the setup:
+Links that i followed to do the setup:
 https://www.capitalone.com/tech/software-engineering/demystifying-devops-getting-started-with-automated-delivery-pipelines/
-
+https://dashboard.ngrok.com/get-started/setup/macos
+https://ngrok.com/docs/integrations/github/webhooks/#start-your-app
 
 # CI/CD with GitHub → Jenkins (local tunneling via ngrok)
 
